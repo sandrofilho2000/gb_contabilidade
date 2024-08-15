@@ -133,10 +133,12 @@ nav.sticky_nav {
 
 main section:nth-of-type(even) {
   background-color: var(--main-section-bg);
+  transition: 0.5s;
 }
 
 main section:nth-of-type(odd) {
   background-color: var(--second-section-bg);
+  transition: 0.5s;
 }
 
 p,

@@ -31,7 +31,7 @@ function GoogleMaps() {
       id="google-maps"
     >
       <div className="container">
-        <h2 className="google-maps_title  title">FAÇA UMA VISITA</h2>
+        <h2 className="google-maps_title title">FAÇA UMA VISITA</h2>
         <div className="map_wrapper  shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex items-center justify-center">
           {isLoaded ? (
             <GoogleMap
@@ -47,7 +47,7 @@ function GoogleMaps() {
               >
                 {isInfoWindowOpen && (
                   <InfoWindow position={center}>
-                    <p className="font-medium">
+                    <p className="font-medium text-[#585858]">
                       Rua Manoel da Costa Marins, 24 - Loja 2 Itapeba, Maricá -
                       RJ
                     </p>
