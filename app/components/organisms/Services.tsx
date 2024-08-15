@@ -24,6 +24,7 @@ const Services = () => {
   };
 
   useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
     gsap.utils.toArray('.services .fadein--top').forEach((card: any) => {
       gsap.fromTo(
         card,
@@ -34,7 +35,7 @@ const Services = () => {
           stagger: 0.5,
           scrollTrigger: {
             trigger: card,
-            start: 'top 70%',
+            start: 'top 90%',
             end: 'bottom 10%',
             once: true,
           },
@@ -53,7 +54,7 @@ const Services = () => {
 
         <div className="services-wrapper grid grid-cols-1 grid-rows-4 md:grid-cols-2 md:grid-rows-2 gap-6 place-items-center">
           <Tilt options={defaultOptions}>
-            <div className="service card">
+            <div className="service card fadein--top">
               <MdAttachMoney className="text-4xl" />
               <h3 className="uppercase font-semibold">Imposto de renda</h3>
               <p className="text-sm">
@@ -63,7 +64,7 @@ const Services = () => {
           </Tilt>
 
           <Tilt options={defaultOptions}>
-            <div className="service card">
+            <div className="service card fadein--top">
               <GiFactory className="text-4xl" />
               <h3 className="uppercase font-semibold">Abertura de empresa</h3>
               <p className="text-sm">
@@ -73,7 +74,7 @@ const Services = () => {
           </Tilt>
 
           <Tilt options={defaultOptions}>
-            <div className="service card">
+            <div className="service card fadein--top">
               <IoDocumentAttachSharp className="text-4xl" />
               <h3 className="uppercase font-semibold">Criação de MEI</h3>
               <p className="text-sm">
@@ -83,7 +84,7 @@ const Services = () => {
           </Tilt>
 
           <Tilt options={defaultOptions}>
-            <div className="service card">
+            <div className="service card fadein--top">
               <FaHandshake className="text-4xl" />
               <h3 className="uppercase font-semibold">Contabilidade geral</h3>
               <p className="text-sm">

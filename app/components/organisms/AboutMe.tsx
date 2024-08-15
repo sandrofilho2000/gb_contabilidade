@@ -4,22 +4,22 @@ import React from 'react';
 import Button from '../atoms/Button';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 
 const AboutMe = () => {
   useGSAP(() => {
-    gsap.utils.toArray('.about_me .fadein--top').forEach((item: any) => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.utils.toArray('.about-me .fadein--top').forEach((card: any) => {
       gsap.fromTo(
-        item,
+        card,
         { opacity: 0, y: -20 },
         {
           opacity: 1,
           y: 0,
-          duration: 0.5,
           stagger: 0.5,
-
           scrollTrigger: {
-            trigger: item,
-            start: 'top 70%',
+            trigger: card,
+            start: 'top 90%',
             end: 'bottom 10%',
             once: true,
           },
@@ -29,13 +29,13 @@ const AboutMe = () => {
   }, []);
   return (
     <section
-      className="about_me"
-      id="about_me"
+      className="about-me"
+      id="about-me"
     >
       <div className="container">
-        <h2 className="about_me_title fadein--top title">SOBRE</h2>
-        <div className="about_me_wrapper  flex flex-col justify-center items-center gap-4">
-          <div className="about_me_img">
+        <h2 className="about-me_title fadein--top title">SOBRE</h2>
+        <div className="about-me_wrapper  flex flex-col justify-center items-center gap-4">
+          <div className="about-me_img">
             <Image
               height={400}
               width={400}
@@ -46,7 +46,7 @@ const AboutMe = () => {
             />
           </div>
 
-          <div className="about_me_text max-w-[400px]">
+          <div className="about-me_text max-w-[400px]">
             <p className="fadein--top text-center text-sm font-medium ">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo
               iste doloribus, consequatur expedita minima id fugit ipsam dolorum

@@ -4,20 +4,22 @@ import React from 'react';
 import Button from '../atoms/Button';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 
 const TextImg = () => {
   useGSAP(() => {
-    gsap.utils.toArray('.text-img .fadein--top').forEach((item: any) => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.utils.toArray('.text-img .fadein--top').forEach((card: any) => {
       gsap.fromTo(
-        item,
-        { opacity: 0, y: -10 },
+        card,
+        { opacity: 0, y: -20 },
         {
           opacity: 1,
           y: 0,
-          duration: 0.5,
+          stagger: 0.5,
           scrollTrigger: {
-            trigger: item,
-            start: 'top 50%',
+            trigger: card,
+            start: 'top 70%',
             end: 'bottom 10%',
             once: true,
           },

@@ -2,8 +2,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
 import { Tilt } from 'react-tilt';
 
 const Clients = () => {
@@ -18,29 +16,7 @@ const Clients = () => {
     reset: true,
     easing: 'cubic-bezier(.03,.98,.52,.99)',
   };
-  useGSAP(() => {
-    gsap.utils
-      .toArray('.clients .client_wrapper')
-      .forEach((item: any, index: number) => {
-        gsap.fromTo(
-          item,
-          { opacity: 0, y: -10 },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.5,
-            delay: index * 0.2,
-            scrollTrigger: {
-              trigger: item,
-              start: 'top 10%',
-              end: 'bottom 10%',
-              scrub: true,
-              once: true,
-            },
-          }
-        );
-      });
-  }, []);
+
   const list = [
     {
       link: 'https://www.instagram.com/arnaldo_piscinas_/',
@@ -86,7 +62,7 @@ const Clients = () => {
       id="clients"
     >
       <div className="container">
-        <h2 className="clients_title fadein--top title">NOSSOS PARCEIROS</h2>
+        <h2 className="clients_title title">NOSSOS PARCEIROS</h2>
         <div className="clients_wrapper flex flex-wrap justify-center items-center gap-3	">
           {list.map((item, index) => (
             <Tilt
