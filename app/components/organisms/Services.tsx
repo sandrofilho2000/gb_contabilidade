@@ -24,32 +24,18 @@ const Services = () => {
   };
 
   useGSAP(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.fromTo(
-      '.services-title',
-      { opacity: 0, y: -10 },
-      {
-        opacity: 1,
-        y: 0,
-        scrollTrigger: {
-          trigger: '.services-title',
-          start: 'top 70%',
-          end: 'bottom 50%',
-          once: true,
-        },
-      }
-    );
-    gsap.utils.toArray('.service').forEach((card: any) => {
+    gsap.utils.toArray('.services .fadein--top').forEach((card: any) => {
       gsap.fromTo(
         card,
-        { opacity: 0 },
+        { opacity: 0, y: -20 },
         {
           opacity: 1,
-          duration: 0.5,
+          y: 0,
+          stagger: 0.5,
           scrollTrigger: {
             trigger: card,
-            start: 'top 90%',
-            end: 'bottom 50%',
+            start: 'top 70%',
+            end: 'bottom 10%',
             once: true,
           },
         }
