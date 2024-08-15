@@ -39,7 +39,7 @@ const InstagramSection = () => {
       id="about_me"
     >
       <div className="container">
-        <h2 className="about_me_title fadein title">NOSSO INSTAGRAM</h2>
+        <h2 className="about_me_title fadein--top title">NOSSO INSTAGRAM</h2>
         <div className="instagram_wrapper">
           <Carousel responsive={responsive}>
             {posts.map((item, index) => (
@@ -58,7 +58,7 @@ const InstagramSection = () => {
           <Button
             text="VISITE NOSSO INSTAGRAM"
             link="#"
-            classes="mx-auto block"
+            classes="mx-auto block transition-all transition-delay-500"
             icon={<FaInstagram className="text-lg" />}
           />
         </div>

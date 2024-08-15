@@ -13,6 +13,7 @@
     "@gsap/react": "^2.1.0",
     "@react-google-maps/api": "^2.19.3",
     "@react-icons/all-files": "^4.1.0",
+    "aos": "^3.0.0-beta.6",
     "next": "14.2.5",
     "react": "^18.3.1",
     "react-alice-carousel": "^2.9.1",
@@ -25,6 +26,7 @@
     "react-tilt": "^1.0.2"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

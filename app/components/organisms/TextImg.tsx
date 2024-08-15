@@ -7,7 +7,7 @@ import { useGSAP } from '@gsap/react';
 
 const TextImg = () => {
   useGSAP(() => {
-    gsap.utils.toArray('.text-img .fadein').forEach((item: any) => {
+    gsap.utils.toArray('.text-img .fadein--top').forEach((item: any) => {
       gsap.fromTo(
         item,
         { opacity: 0, y: -10 },
@@ -31,21 +31,21 @@ const TextImg = () => {
       id="text-img"
     >
       <div className="container">
-        <h2 className="text-img_title fadein title">LOREM IPSUM</h2>
+        <h2 className="text-img_title fadein--top title">LOREM IPSUM</h2>
         <div className="text-img_wrapper  flex flex-col justify-center items-center gap-4">
           <div className="text-img_img">
             <Image
               height={400}
               width={500}
               src="https://images.pexels.com/photos/8296977/pexels-photo-8296977.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              className="rounded-sm fadein w-[70%] max-w-[400px] block mx-auto shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
+              className="rounded-sm fadein--top w-[70%] max-w-[400px] block mx-auto shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
               title="Contabilidade"
               alt="Contabilidade"
             />
           </div>
 
           <div className="text-img_text max-w-[400px]">
-            <p className="fadein text-center text-sm font-medium ">
+            <p className="fadein--top text-center text-sm font-medium ">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo
               iste doloribus, consequatur expedita minima id fugit ipsam dolorum
               non quo magnam voluptatum culpa vitae sint eos? Nobis possimus
@@ -54,7 +54,7 @@ const TextImg = () => {
             <Button
               text="FAÇA UM ORÇAMENTO"
               link="#"
-              classes="mx-auto mt-4 block fadein"
+              classes="mx-auto mt-4 block fadein--top transition-all transition-delay-500"
             />
           </div>
         </div>

@@ -111,7 +111,7 @@ const Services = () => {
           <Button
             text="Faça um orçamento"
             link="#contact"
-            classes="mx-auto mt-4"
+            classes="mx-auto mt-4 transition-all transition-delay-500"
           />
         </div>
       </div>

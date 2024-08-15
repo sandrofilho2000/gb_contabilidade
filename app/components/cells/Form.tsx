@@ -93,7 +93,7 @@ const Form = () => {
       </div>
       <Button
         text="Enviar mensagem"
-        classes="btn-white mt-4"
+        classes="btn-white mt-4 transition-all transition-delay-500"
         icon={<MdOutlineEmail className="text-lg" />}
       />
     </form>

@@ -13,7 +13,7 @@ const Button = ({
 }) => {
   return (
     <button
-      className={`btn transition-all transition-delay-500 main-color-bg p-2 px-4 rounded-sm  hover:bg-transparent hover:border-solid border-2 border-transparent ${classes}`}
+      className={`btn main-color-bg p-2 px-4 rounded-sm  hover:bg-transparent hover:border-solid border-2 border-transparent ${classes}`}
     >
       {link ? (
         <a

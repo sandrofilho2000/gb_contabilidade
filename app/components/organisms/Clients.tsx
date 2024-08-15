@@ -86,7 +86,7 @@ const Clients = () => {
       id="clients"
     >
       <div className="container">
-        <h2 className="clients_title fadein title">NOSSOS PARCEIROS</h2>
+        <h2 className="clients_title fadein--top title">NOSSOS PARCEIROS</h2>
         <div className="clients_wrapper flex flex-wrap justify-center items-center gap-3	">
           {list.map((item, index) => (
             <Tilt
