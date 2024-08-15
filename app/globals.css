@@ -62,6 +62,14 @@
   border-color: var(--main-color);
 }
 
+.btn.btn-white {
+  border-color: white;
+}
+
+.btn.btn-white:hover a {
+  color: white;
+}
+
 .main-color-border {
   border-color: var(--main-color);
 }

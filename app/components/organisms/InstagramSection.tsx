@@ -3,6 +3,7 @@ import React from 'react';
 import { InstagramEmbed } from 'react-social-media-embed';
 import Carousel from 'react-multi-carousel';
 import Button from '../atoms/Button';
+import { FaInstagram } from 'react-icons/fa';
 
 const InstagramSection = () => {
   const responsive = {
@@ -58,6 +59,7 @@ const InstagramSection = () => {
             text="VISITE NOSSO INSTAGRAM"
             link="#"
             classes="mx-auto block"
+            icon={<FaInstagram className="text-lg" />}
           />
         </div>
       </div>

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@gsap/react": "^2.1.0",
     "@react-google-maps/api": "^2.19.3",
     "@react-icons/all-files": "^4.1.0",

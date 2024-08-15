@@ -70,7 +70,9 @@ const Services = () => {
             <div className="service card">
               <MdAttachMoney className="text-4xl" />
               <h3 className="uppercase font-semibold">Imposto de renda</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p className="text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
             </div>
           </Tilt>
 
@@ -78,7 +80,9 @@ const Services = () => {
             <div className="service card">
               <GiFactory className="text-4xl" />
               <h3 className="uppercase font-semibold">Abertura de empresa</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p className="text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
             </div>
           </Tilt>
 
@@ -86,7 +90,9 @@ const Services = () => {
             <div className="service card">
               <IoDocumentAttachSharp className="text-4xl" />
               <h3 className="uppercase font-semibold">Criação de MEI</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p className="text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
             </div>
           </Tilt>
 
@@ -94,7 +100,9 @@ const Services = () => {
             <div className="service card">
               <FaHandshake className="text-4xl" />
               <h3 className="uppercase font-semibold">Contabilidade geral</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p className="text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
             </div>
           </Tilt>
         </div>

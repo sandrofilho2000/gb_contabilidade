@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { MdLocationPin, MdOutlineEmail } from 'react-icons/md';
+import Button from '../atoms/Button';
+import Form from '../cells/Form';
 
 const Footer = () => {
   return (
@@ -9,7 +11,7 @@ const Footer = () => {
       id="footer"
     >
       <div className="container flex items-center flex-col lg:flex-row justify-center gap-4">
-        <div className="menu_wrapper flex justify-between w-[80%] max-w-[460px]">
+        <div className="menu_wrapper flex flex-col md:flex-row justify-between w-full ">
           <ul className="flex flex-col justify-center">
             <li className="flex justify-start">
               <a
@@ -92,29 +94,8 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="form_wrapper w-[80%] max-w-[460px]">
-          <form action="">
-            <div className="input_wrapper justify-between flex gap-2">
-              <input
-                type="text"
-                name="name"
-                placeholder="Nome:"
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="E-mail:"
-              />
-            </div>
-            <div className="input_wrapper w-full mt-2 flex">
-              <textarea
-                name="message"
-                id="message"
-                placeholder="Sua mensagem:"
-                className="w-full"
-              ></textarea>
-            </div>
-          </form>
+        <div className="form_wrapper w-full ">
+          <Form />
         </div>
       </div>
     </footer>
