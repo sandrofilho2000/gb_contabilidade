@@ -23,9 +23,12 @@ const Navbar = () => {
       id="navbar"
       className={`navbar transition-all w-full transition-delay-500 flex items-center  h-16 fixed z-50 ${
         sticky
-          ? 'bg-white main-color-txt shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
+          ? 'sticky_nav main-color-txt shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
           : 'transparent text-white'
       }`}
+      onClick={(e: any) => {
+        document.body.classList.toggle('dark');
+      }}
     >
       <div className="container flex items-center justify-between ">
         <h1 className="logo">

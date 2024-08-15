@@ -22,7 +22,7 @@ const Hero = () => {
   return (
     <header
       id="hero"
-      className="hero bg-white relative bg-[url('https://images.pexels.com/photos/4476378/pexels-photo-4476378.jpeg?auto=compress&cs=tinysrgb&w=600')] bg-fixed	bg-no-repeat bg-cover"
+      className="hero bg-white relative flex justify-center  items-center bg-[url('https://images.pexels.com/photos/4476378/pexels-photo-4476378.jpeg?auto=compress&cs=tinysrgb&w=600')] lg:bg-[url('https://images.pexels.com/photos/4476375/pexels-photo-4476375.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-fixed	bg-no-repeat bg-cover"
     >
       <Image
         width={375}
@@ -34,20 +34,21 @@ const Hero = () => {
       />
 
       <div className="hero-overlay"></div>
-
-      <div className="hero-center h-auto transform -translate-x-1/2 -translate-y-1/2 gap-4 flex flex-col items-center max-w-[340px] w-full text-center z-20 absolute top-1/2 left-1/2  text-white">
-        <h1 className="text-3xl uppercase fadein--top font-bold">
-          Lorem <span className="main-color-txt">ipsum dolor</span> site ammet
-        </h1>
-        <p className="text-white fadein--top">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut explicabo
-          temporibus psum dolor si.
-        </p>
-        <Button
-          classes="hero-btn relative fadein--top"
-          text="Faça um orçamento"
-          link="#contact"
-        />
+      <div className="container absolute w-full h-full flex items-center justify-center lg:justify-start">
+        <div className="hero-center h-auto transform gap-4 flex flex-col items-center lg:items-start max-w-[340px] lg:max-w-[500px] w-full text-center lg:text-left z-20  text-white">
+          <h1 className="text-3xl lg:text-4xl uppercase fadein--top font-bold">
+            Lorem <span className="main-color-txt">ipsum dolor</span> site ammet
+          </h1>
+          <p className="text-white lg:text-base fadein--top">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut
+            explicabo temporibus psum dolor si.
+          </p>
+          <Button
+            classes="hero-btn relative fadein--top"
+            text="Faça um orçamento"
+            link="#footer"
+          />
+        </div>
       </div>
     </header>
   );

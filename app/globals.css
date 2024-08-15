@@ -1,31 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900');
+/* Importação de fontes e diretivas do Tailwind */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Definição de variáveis de cores */
 :root {
   --main-color: #ef8f55;
+  --main-section-bg-dark: #1e1e1e;
+  --second-section-bg-dark: #2d2d2d;
+  --title-color-dark: #ffffff;
+  --txt-color-dark: #f4f4f4;
+  --main-section-bg-light: #ffffff;
+  --second-section-bg-light: #f4f4f4;
+  --title-color-light: #2a2a2a;
+  --txt-color-light: #585858;
 }
 
+body.dark {
+  --main-section-bg: var(--main-section-bg-dark);
+  --second-section-bg: var(--second-section-bg-dark);
+  --title-color: var(--title-color-dark);
+  --txt-color: var(--txt-color-dark);
+}
+
+body,
+body.light {
+  --main-section-bg: var(--main-section-bg-light);
+  --second-section-bg: var(--second-section-bg-light);
+  --title-color: var(--title-color-light);
+  --txt-color: var(--txt-color-light);
+}
+
+* {
+  font-family: Montserrat, Sans-serif;
+}
+
+/* Estilos baseados em Tailwind e componentes personalizados */
 @layer components {
   .container {
-    @apply px-5 py-10 max-w-[1400px] w-full mx-auto;
+    @apply px-5 py-10 max-w-[1600px]  w-full mx-auto lg:px-10;
   }
 
   .card {
-    @apply border main-color-border transition-all  items-center rounded-sm shadow-sm px-2 h-36 w-full flex flex-col justify-center gap-1  main-color-txt text-center;
+    @apply border main-color-border transition-all items-center rounded-sm shadow-sm px-2 h-36 w-full flex flex-col justify-center gap-1 main-color-txt text-center;
   }
 
   .title {
-    @apply text-center relative text-xl font-bold inline-block left-1/2 transform -translate-x-1/2 mx-auto text-[#2a2a2a] mb-7;
-  }
-
-  .title::before {
-    @apply absolute w-1/2 h-[2px] bg-red-500 bottom-0 -translate-x-3;
+    @apply text-center relative text-xl font-bold inline-block left-1/2 transform -translate-x-1/2 mx-auto mb-7;
   }
 
   .footer_link {
-    @apply pl-2 text-white text-xs uppercase font-bold  mb-3;
+    @apply pl-2 text-white text-xs uppercase font-bold mb-3;
   }
 
   .fadein--top {
@@ -37,6 +64,7 @@
   }
 }
 
+/* Estilos específicos */
 .hero .hero-overlay {
   position: absolute;
   content: '';
@@ -53,16 +81,29 @@
   color: white;
 }
 
-* {
-  font-family: Montserrat, Sans-serif;
-}
-
 .main-color-bg {
   background-color: var(--main-color);
 }
 
 .main-color-txt {
   color: var(--main-color);
+}
+
+nav.sticky_nav {
+  background-color: var(--main-section-bg);
+}
+
+.title {
+  color: var(--title-color);
+}
+.title::before {
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  bottom: 0px;
+  transform: translateY(2px);
+  content: '';
+  background-color: var(--main-color);
 }
 
 .btn:hover {
@@ -82,16 +123,6 @@
   border-color: var(--main-color);
 }
 
-.title::before {
-  content: '';
-  position: absolute;
-  width: 50%;
-  bottom: -3px;
-  left: 10px;
-  height: 3px;
-  background-color: var(--main-color);
-}
-
 .card:hover {
   background-color: var(--main-color);
 }
@@ -101,17 +132,17 @@
 }
 
 main section:nth-of-type(even) {
-  background-color: white;
+  background-color: var(--main-section-bg);
 }
 
 main section:nth-of-type(odd) {
-  background-color: #f4f4f4;
+  background-color: var(--second-section-bg);
 }
 
 p,
 span,
 a {
-  color: #585858;
+  color: var(--txt-color);
 }
 
 button:hover a {

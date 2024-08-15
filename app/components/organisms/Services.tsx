@@ -4,24 +4,35 @@ import Button from '../atoms/Button';
 import { IoDocumentAttachSharp } from 'react-icons/io5';
 import { GiFactory } from 'react-icons/gi';
 import { MdAttachMoney } from 'react-icons/md';
-import { Tilt } from 'react-tilt';
 import { FaHandshake } from 'react-icons/fa';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import Service from '../cells/Service';
 
 const Services = () => {
-  const defaultOptions = {
-    reverse: false,
-    max: 15,
-    perspective: 1000,
-    scale: 1,
-    speed: 1000,
-    transition: true,
-    axis: null,
-    reset: true,
-    easing: 'cubic-bezier(.03,.98,.52,.99)',
-  };
+  const list = [
+    {
+      title: 'Imposto de renda',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      icon: <MdAttachMoney className="text-4xl" />,
+    },
+    {
+      title: 'Abertura de empresa',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      icon: <GiFactory className="text-4xl" />,
+    },
+    {
+      title: 'Criação de MEI',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      icon: <IoDocumentAttachSharp className="text-4xl" />,
+    },
+    {
+      title: 'Contabilidade geral',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      icon: <FaHandshake className="text-4xl" />,
+    },
+  ];
 
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -52,52 +63,19 @@ const Services = () => {
       <div className="container">
         <h2 className="services-title title">SERVIÇOS</h2>
 
-        <div className="services-wrapper grid grid-cols-1 grid-rows-4 md:grid-cols-2 md:grid-rows-2 gap-6 place-items-center">
-          <Tilt options={defaultOptions}>
-            <div className="service card fadein--top">
-              <MdAttachMoney className="text-4xl" />
-              <h3 className="uppercase font-semibold">Imposto de renda</h3>
-              <p className="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-            </div>
-          </Tilt>
-
-          <Tilt options={defaultOptions}>
-            <div className="service card fadein--top">
-              <GiFactory className="text-4xl" />
-              <h3 className="uppercase font-semibold">Abertura de empresa</h3>
-              <p className="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-            </div>
-          </Tilt>
-
-          <Tilt options={defaultOptions}>
-            <div className="service card fadein--top">
-              <IoDocumentAttachSharp className="text-4xl" />
-              <h3 className="uppercase font-semibold">Criação de MEI</h3>
-              <p className="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-            </div>
-          </Tilt>
-
-          <Tilt options={defaultOptions}>
-            <div className="service card fadein--top">
-              <FaHandshake className="text-4xl" />
-              <h3 className="uppercase font-semibold">Contabilidade geral</h3>
-              <p className="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-            </div>
-          </Tilt>
+        <div className="services-wrapper grid grid-cols-1 grid-rows-4 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 gap-6 place-items-center">
+          {list.map((item, index: number) => (
+            <Service
+              key={index}
+              item={item}
+            />
+          ))}
         </div>
 
         <div className="btns w-full flex justify-center">
           <Button
             text="Faça um orçamento"
-            link="#contact"
+            link="#footer"
             classes="mx-auto mt-4 transition-all transition-delay-500"
           />
         </div>

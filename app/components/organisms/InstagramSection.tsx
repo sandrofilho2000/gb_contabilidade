@@ -29,9 +29,10 @@ const InstagramSection = () => {
     },
   };
   const posts = [
-    'https://www.instagram.com/p/CgXHFIwONDP/',
-    'https://www.instagram.com/p/C8fLlk5OR6k/',
-    'https://www.instagram.com/p/B8G3wfCF7bg/',
+    'https://www.instagram.com/reel/CnKyAS7jY3t/',
+    'https://www.instagram.com/p/CEKIYPiFN_0/',
+    'https://www.instagram.com/reel/C-s0NYft6Yj/',
+    'https://www.instagram.com/p/C97Vv5CtTD6/',
   ];
   return (
     <section

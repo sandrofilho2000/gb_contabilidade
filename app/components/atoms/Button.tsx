@@ -17,7 +17,7 @@ const Button = ({
     >
       {link ? (
         <a
-          className="uppercase flex items-center gap-1 justify-center font-semibold text-white text-xs"
+          className="uppercase flex items-center gap-1 justify-center font-semibold text-white text-xs lg:text-sm"
           href={link}
         >
           {icon}
