@@ -5,6 +5,7 @@ import Button from "../atoms/Button";
 import gsap from "gsap";
 import { useEffect } from "react";
 import { useGSAP } from "@gsap/react";
+import MouseScroll from "../atoms/MouseScroll";
 
 const Hero = () => {
   useGSAP(() => {
@@ -14,7 +15,7 @@ const Hero = () => {
       {
         opacity: 1,
         y: 0,
-        stagger: 0.5,
+        stagger: 0.65,
       }
     );
   }, []);
@@ -34,14 +35,18 @@ const Hero = () => {
       />
 
       <div className="hero-overlay"></div>
-      <div className="container absolute w-full h-full flex items-center justify-center lg:justify-start">
-        <div className="hero-center h-auto transform gap-4 flex flex-col items-center lg:items-start max-w-[340px] lg:max-w-[500px] w-full text-center lg:text-left z-20  text-white">
-          <h1 className="text-3xl lg:text-4xl uppercase fadein--top font-bold">
-            Lorem <span className="main-color-txt">ipsum dolor</span> site ammet
-          </h1>
-          <p className="text-white lg:text-base fadein--top">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut
-            explicabo temporibus psum dolor si.
+      <div className="container absolute w-full h-full flex items-center justify-center">
+        <div className="hero-center h-auto transform gap-4 flex flex-col items-center  max-w-[340px] lg:max-w-[500px] w-full text-center  z-20  text-white">
+          <Image
+            src="Logo2.svg"
+            className="fadein--top lg:h-[330px] lg:w-[330px]"
+            height={270}
+            width={270}
+            alt="GB Contabilidade"
+            title="GB Contabilidade"
+          />
+          <p className="text-white lg:text-base   fadein--top">
+            Lorem, ipsum dolor sit amet consectetur.
           </p>
           <Button
             classes="hero-btn relative fadein--top"
@@ -49,8 +54,8 @@ const Hero = () => {
             link="#footer"
           />
         </div>
-        <div className="mouse"></div>
       </div>
+      <MouseScroll classes="transform translate-y-[20%] fadein--top" />
     </header>
   );
 };

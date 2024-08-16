@@ -4,11 +4,20 @@ import { MdLocationPin, MdOutlineEmail } from "react-icons/md";
 import Button from "../atoms/Button";
 import Form from "../cells/Form";
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   return (
     <footer className="footer" id="footer">
-      <div className="container flex items-center flex-col lg:flex-row justify-center gap-4">
+      <div className="container flex items-center relative flex-col lg:flex-row justify-center pt-32 gap-4 ">
+        <Image
+          src="Logo_all_white.svg"
+          className=" lg:h-[100px] lg:w-[100px] absolute top-3"
+          height={70}
+          width={70}
+          alt="GB Contabilidade"
+          title="GB Contabilidade"
+        />
         <div className="menu_wrapper flex flex-col md:flex-row justify-between w-full ">
           <ul className="flex flex-col justify-center">
             <li className="flex justify-start">

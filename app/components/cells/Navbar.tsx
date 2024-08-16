@@ -2,7 +2,6 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
-import ThemeToggle from "../atoms/ThemeToggle";
 import { useSystem } from "../../context/systemContext";
 import Link from "next/link";
 
@@ -35,7 +34,11 @@ const Navbar = ({ classes }: { classes?: string }) => {
         <h1 className="logo">
           <Link href="/">
             <Image
-              src="logo.svg"
+              src={
+                sticky || isMobileMenuOpen
+                  ? "Logo_all_orange_short.svg"
+                  : "Logo_short.svg"
+              }
               height={40}
               width={60}
               alt="GB Contabilidade"
