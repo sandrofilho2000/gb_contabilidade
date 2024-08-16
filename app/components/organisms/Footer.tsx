@@ -1,73 +1,58 @@
-import React, { useRef } from 'react';
-import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
-import { MdLocationPin, MdOutlineEmail } from 'react-icons/md';
-import Button from '../atoms/Button';
-import Form from '../cells/Form';
+import React, { useRef } from "react";
+import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { MdLocationPin, MdOutlineEmail } from "react-icons/md";
+import Button from "../atoms/Button";
+import Form from "../cells/Form";
+import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer
-      className="footer"
-      id="footer"
-    >
+    <footer className="footer" id="footer">
       <div className="container flex items-center flex-col lg:flex-row justify-center gap-4">
         <div className="menu_wrapper flex flex-col md:flex-row justify-between w-full ">
           <ul className="flex flex-col justify-center">
             <li className="flex justify-start">
-              <a
-                className="footer_link"
-                href="#hero"
-              >
+              <Link className="footer-link" href="#hero">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="flex justify-start">
-              <a
-                className="footer_link "
-                href="#about"
-              >
+              <Link className="footer-link " href="#about">
                 Sobre
-              </a>
+              </Link>
             </li>
             <li className="flex justify-start">
-              <a
-                className="footer_link "
-                href="#services"
-              >
+              <Link className="footer-link " href="#services">
                 Serviços
-              </a>
+              </Link>
             </li>
             <li className="flex justify-start">
-              <a
-                className="footer_link "
-                href="#testimonials"
-              >
+              <Link className="footer-link " href="#testimonials">
                 Nossos Parceiros
-              </a>
+              </Link>
             </li>
             <li className="flex justify-start">
-              <a
-                className="footer_link "
-                href="#google-maps"
-              >
+              <Link className="footer-link " href="#google-maps">
                 Faça uma visita
-              </a>
+              </Link>
+            </li>
+            <li className="flex justify-start">
+              <Link className="footer-link " href="/politica-de-privacidade">
+                Política de privacidade
+              </Link>
             </li>
           </ul>
-          <hr className='mb-3 max-w-[200px] ml-2 opacity-50 lg:hidden' />
+          <hr className="mb-3 max-w-[200px] ml-2 opacity-50 lg:hidden" />
           <ul className="flex flex-col justify-center">
             <li className="flex">
-              <a
-                className="footer_link flex items-center gap-1"
-                href="#"
-              >
+              <Link className="footer-link flex items-center gap-1" href="#">
                 <FaWhatsapp className="text-lg" />
                 +55 21 99981-9549
-              </a>
+              </Link>
             </li>
             <li className="flex">
               <a
-                className="footer_link flex items-center gap-1"
+                className="footer-link flex items-center gap-1"
                 href="https://www.instagram.com/gbassessoriacontabil/"
               >
                 <FaInstagram className="text-lg" />
@@ -75,22 +60,16 @@ const Footer = () => {
               </a>
             </li>
             <li className="flex">
-              <a
-                className="footer_link flex items-center gap-1"
-                href="#"
-              >
+              <Link className="footer-link flex items-center gap-1" href="#">
                 <FaFacebook className="text-lg" />
                 Facebook
-              </a>
+              </Link>
             </li>
             <li className="flex">
-              <a
-                className="footer_link flex items-center gap-1"
-                href="#"
-              >
+              <Link className="footer-link flex items-center gap-1" href="#">
                 <MdOutlineEmail className="text-lg" />
                 E-mail
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

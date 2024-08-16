@@ -34,9 +34,9 @@ body.light {
 
 * {
   font-family: Montserrat, Sans-serif;
+  scroll-behavior: smooth;
 }
 
-/* Estilos baseados em Tailwind e componentes personalizados */
 @layer components {
   .container {
     @apply px-5 py-10 max-w-[1600px]  w-full mx-auto lg:px-10;
@@ -50,8 +50,12 @@ body.light {
     @apply text-center relative text-xl font-bold inline-block left-1/2 transform -translate-x-1/2 mx-auto mb-10;
   }
 
-  .footer_link {
+  .footer-link,
+  .menu-link {
     @apply pl-2 text-white text-xs uppercase font-bold mb-3;
+  }
+  .menu-link {
+    @apply pl-0;
   }
 
   .fadein--top {
@@ -109,6 +113,25 @@ nav.sticky_nav ul li a {
   background-color: var(--main-color);
 }
 
+.desktop_menu li {
+  position: relative;
+}
+
+.desktop_menu li::before {
+  position: absolute;
+  width: 0%;
+  transition: 0.5s;
+  height: 2px;
+  bottom: 0px;
+  transform: translateY(2px);
+  content: "";
+  background-color: white;
+}
+
+.desktop_menu li.active::before {
+  width: 50%;
+}
+
 .btn:hover {
   color: var(--main-color);
   border-color: var(--main-color);
@@ -142,6 +165,10 @@ main section:nth-of-type(even) {
 main section:nth-of-type(odd) {
   background-color: var(--second-section-bg);
   transition: 0.5s;
+}
+
+.second-bg {
+  background-color: var(--second-section-bg);
 }
 
 p,

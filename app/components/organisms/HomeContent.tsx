@@ -1,21 +1,23 @@
-import React from 'react';
-import Navbar from '../cells/Navbar';
-import Hero from './Hero';
-import Services from './Services';
-import AboutMe from './AboutMe';
-import Testimonials from './Testimonials';
-import TextImg from './TextImg';
-import GoogleMaps from './GoogleMaps';
-import Awards from './Awards';
-import InstagramSection from './InstagramSection';
-import Clients from './Clients';
-import Footer from './Footer';
-import MadeBy from './MadeBy';
+import React from "react";
+import Navbar from "../cells/Navbar";
+import Hero from "./Hero";
+import Services from "./Services";
+import AboutMe from "./AboutMe";
+import Testimonials from "./Testimonials";
+import TextImg from "./TextImg";
+import GoogleMaps from "./GoogleMaps";
+import Awards from "./Awards";
+import InstagramSection from "./InstagramSection";
+import Clients from "./Clients";
+import Footer from "./Footer";
+import MadeBy from "./MadeBy";
+import MobileMenu from "./MobileMenu";
 
 const HomeContent = () => {
   return (
     <div>
       <Navbar />
+      <MobileMenu />
       <Hero />
       <main id="main">
         <Services />
@@ -27,7 +29,7 @@ const HomeContent = () => {
         <Clients />
         <GoogleMaps />
         <Footer />
-        <MadeBy/>
+        <MadeBy />
       </main>
     </div>
   );
