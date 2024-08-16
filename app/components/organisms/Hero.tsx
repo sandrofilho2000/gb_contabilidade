@@ -9,13 +9,24 @@ import MouseScroll from "../atoms/MouseScroll";
 
 const Hero = () => {
   useGSAP(() => {
-    gsap.fromTo(
+    // Create a GSAP timeline instance
+    const tl = gsap.timeline();
+
+    tl.fromTo(
+      ".hero .hero-overlay",
+      { opacity: 1 },
+      {
+        opacity: 0.6,
+        stagger: 0.65,
+      }
+    ).fromTo(
       ".hero .fadein--top",
       { opacity: 0, y: -20 },
       {
         opacity: 1,
         y: 0,
         stagger: 0.65,
+        delay: 0.3,
       }
     );
   }, []);
@@ -46,13 +57,14 @@ const Hero = () => {
             title="GB Contabilidade"
           />
           <p className="text-white lg:text-base   fadein--top">
-            Lorem, ipsum dolor sit amet consectetur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit
+            unde, tenetur id consequuntur voluptate.
           </p>
-          <Button
+          {/*           <Button
             classes="hero-btn relative fadein--top"
             text="Faça um orçamento"
             link="#footer"
-          />
+          /> */}
         </div>
       </div>
       <MouseScroll classes="transform translate-y-[20%] fadein--top" />

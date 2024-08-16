@@ -1,26 +1,26 @@
-'use client';
-import Image from 'next/image';
-import React from 'react';
-import Button from '../atoms/Button';
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
-import ScrollTrigger from 'gsap/ScrollTrigger';
+"use client";
+import Image from "next/image";
+import React from "react";
+import Button from "../atoms/Button";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 const AboutMe = () => {
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
-    gsap.utils.toArray('.about-me .fadein--top').forEach((card: any) => {
+    gsap.utils.toArray(".about-me .fadein--top").forEach((card: any) => {
       gsap.fromTo(
         card,
         { opacity: 0, y: -20 },
         {
           opacity: 1,
           y: 0,
-          stagger: 0.5,
+          stagger: 0.65,
           scrollTrigger: {
             trigger: card,
-            start: 'top 90%',
-            end: 'bottom 10%',
+            start: "top 90%",
+            end: "bottom 10%",
             once: true,
           },
         }
@@ -28,10 +28,7 @@ const AboutMe = () => {
     });
   }, []);
   return (
-    <section
-      className="about-me"
-      id="about-me"
-    >
+    <section className="about-me" id="about-me">
       <div className="container">
         <h2 className="about-me_title fadein--top title lg:hidden">SOBRE</h2>
         <div className="about-me_wrapper  flex flex-col lg:flex-row justify-center items-center gap-4">

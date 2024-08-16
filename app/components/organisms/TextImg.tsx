@@ -1,26 +1,26 @@
-'use client';
-import Image from 'next/image';
-import React from 'react';
-import Button from '../atoms/Button';
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
-import ScrollTrigger from 'gsap/ScrollTrigger';
+"use client";
+import Image from "next/image";
+import React from "react";
+import Button from "../atoms/Button";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 const TextImg = () => {
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
-    gsap.utils.toArray('.text-img .fadein--top').forEach((card: any) => {
+    gsap.utils.toArray(".text-img .fadein--top").forEach((card: any) => {
       gsap.fromTo(
         card,
         { opacity: 0, y: -20 },
         {
           opacity: 1,
           y: 0,
-          stagger: 0.5,
+          stagger: 0.65,
           scrollTrigger: {
             trigger: card,
-            start: 'top 70%',
-            end: 'bottom 10%',
+            start: "top 70%",
+            end: "bottom 10%",
             once: true,
           },
         }
@@ -28,10 +28,7 @@ const TextImg = () => {
     });
   }, []);
   return (
-    <section
-      className="text-img"
-      id="text-img"
-    >
+    <section className="text-img" id="text-img">
       <div className="container">
         <h2 className="text-img_title title fadein--top title lg:hidden">
           LOREM IPSUM
