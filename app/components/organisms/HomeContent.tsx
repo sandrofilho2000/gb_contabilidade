@@ -10,6 +10,7 @@ import Awards from './Awards';
 import InstagramSection from './InstagramSection';
 import Clients from './Clients';
 import Footer from './Footer';
+import MadeBy from './MadeBy';
 
 const HomeContent = () => {
   return (
@@ -26,6 +27,7 @@ const HomeContent = () => {
         <Clients />
         <GoogleMaps />
         <Footer />
+        <MadeBy/>
       </main>
     </div>
   );

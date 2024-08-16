@@ -1,15 +1,15 @@
-'use client';
-import Image from 'next/image';
-import React from 'react';
-import Button from '../atoms/Button';
-import gsap from 'gsap';
-import { useEffect } from 'react';
-import { useGSAP } from '@gsap/react';
+"use client";
+import Image from "next/image";
+import React from "react";
+import Button from "../atoms/Button";
+import gsap from "gsap";
+import { useEffect } from "react";
+import { useGSAP } from "@gsap/react";
 
 const Hero = () => {
   useGSAP(() => {
     gsap.fromTo(
-      '.hero .fadein--top',
+      ".hero .fadein--top",
       { opacity: 0, y: -20 },
       {
         opacity: 1,
@@ -49,6 +49,7 @@ const Hero = () => {
             link="#footer"
           />
         </div>
+        <div className="mouse"></div>
       </div>
     </header>
   );

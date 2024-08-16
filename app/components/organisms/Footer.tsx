@@ -54,6 +54,7 @@ const Footer = () => {
               </a>
             </li>
           </ul>
+          <hr className='mb-3 max-w-[200px] ml-2 opacity-50 lg:hidden' />
           <ul className="flex flex-col justify-center">
             <li className="flex">
               <a
