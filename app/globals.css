@@ -204,6 +204,7 @@ footer {
 }
 
 .mouse {
+  display: none;
   width: 100px;
   height: 180px;
   border: 4px solid white;
