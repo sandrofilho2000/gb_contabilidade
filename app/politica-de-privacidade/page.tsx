@@ -1,12 +1,12 @@
 import Navbar from "../components/cells/Navbar";
 import Footer from "../components/organisms/Footer";
 import MadeBy from "../components/organisms/MadeBy";
-import MobileMenu from "../components/organisms/MobileMenu";
+import MobileMenu from "../components/cells/MobileMenu";
 
 export default function Politica_de_privacidade() {
   return (
     <div>
-      <Navbar classes="sticky_nav main-color-txt shadow-[0_3px_10px_rgb(0,0,0,0.2)]" />
+      <Navbar is_sticky={true} />
       <MobileMenu />
       <main>
         <section className="pt-16">

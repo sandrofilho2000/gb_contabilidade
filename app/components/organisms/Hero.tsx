@@ -1,9 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import Button from "../atoms/Button";
 import gsap from "gsap";
-import { useEffect } from "react";
 import { useGSAP } from "@gsap/react";
 import MouseScroll from "../atoms/MouseScroll";
 
@@ -51,14 +49,14 @@ const Hero = () => {
           <Image
             src="Logo2.svg"
             className="fadein--top lg:h-[330px] lg:w-[330px]"
-            height={270}
-            width={270}
+            height={220}
+            width={220}
             alt="GB Contabilidade"
             title="GB Contabilidade"
           />
-          <p className="text-white lg:text-base   fadein--top">
+          <p className="text-[#f4f4f4] lg:text-[14px]  uppercase  fadein--top">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit
-            unde, tenetur id consequuntur voluptate.
+            unde.
           </p>
           {/*           <Button
             classes="hero-btn relative fadein--top"

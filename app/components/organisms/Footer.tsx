@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="container flex items-center relative flex-col lg:flex-row justify-center pt-32 gap-4 ">
         <Image
           src="Logo_all_white.svg"
-          className=" lg:h-[100px] lg:w-[100px] absolute top-3"
+          className=" lg:h-[100px]  lg:w-[100px] absolute top-3"
           height={70}
           width={70}
           alt="GB Contabilidade"

@@ -11,7 +11,7 @@ import InstagramSection from "./InstagramSection";
 import Clients from "./Clients";
 import Footer from "./Footer";
 import MadeBy from "./MadeBy";
-import MobileMenu from "./MobileMenu";
+import MobileMenu from "../cells/MobileMenu";
 
 const HomeContent = () => {
   return (

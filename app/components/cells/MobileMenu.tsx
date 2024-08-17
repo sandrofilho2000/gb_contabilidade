@@ -47,6 +47,11 @@ const MobileMenu = () => {
               Faça uma visita
             </Link>
           </li>
+          <li className="text-center">
+            <Link className="menu-link mb-0 " href="#footer">
+              Contato
+            </Link>
+          </li>
         </ul>
       </div>
     </aside>

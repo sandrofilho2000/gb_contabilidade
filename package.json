@@ -16,6 +16,7 @@
     "aos": "^3.0.0-beta.6",
     "axios": "^1.7.4",
     "next": "14.2.5",
+    "ngrok": "^5.0.0-beta.2",
     "react": "^18.3.1",
     "react-alice-carousel": "^2.9.1",
     "react-animate-on-scroll": "^2.1.9",
