@@ -16,11 +16,11 @@ export const metadata: Metadata = {
     title: "GB Contabilidade | Assessoria Contábil",
     description:
       "Soluções contábeis precisas e personalizadas para seu negócio. Confiança e transparência em cada detalhe financeiro.",
-    url: "https://www.seusite.com.br", // Substitua pelo URL real do seu site
+    url: "https://gbcontabilidade-sandrofilho2000s-projects.vercel.app/",
     siteName: "GB Contabilidade",
     images: [
       {
-        url: "https://www.seusite.com.br/imagem-destaque.jpg", // Substitua pela URL da imagem de destaque do seu site
+        url: "https://gbcontabilidade-sandrofilho2000s-projects.vercel.app//opengraph_img.png",
         width: 1200,
         height: 630,
         alt: "GB Contabilidade | Assessoria Contábil",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
       "Precisão e confiança em cada detalhe da sua contabilidade e finanças.",
     images: [
       {
-        url: "https://www.seusite.com.br/imagem-destaque.jpg", // Substitua pela URL da imagem de destaque do seu site
+        url: "https://gbcontabilidade-sandrofilho2000s-projects.vercel.app//imagem-destaque.jpg",
         alt: "GB Contabilidade | Assessoria Contábil",
       },
     ],
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   },
   viewport: "width=device-width, initial-scale=1",
   alternates: {
-    canonical: "https://www.seusite.com.br", // Substitua pelo URL real do seu site
+    canonical: "https://gbcontabilidade-sandrofilho2000s-projects.vercel.app/",
   },
 };
 
