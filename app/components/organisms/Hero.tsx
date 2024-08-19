@@ -55,8 +55,8 @@ const Hero = () => {
             title="GB Contabilidade"
           />
           <p className="text-[#f4f4f4] lg:text-[14px]  uppercase  fadein--top">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit
-            unde.
+            Precisão e confiança em cada detalhe da sua contabilidade e
+            finanças.
           </p>
           {/*           <Button
             classes="hero-btn relative fadein--top"

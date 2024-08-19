@@ -1,9 +1,12 @@
-'use client';
-import React from 'react';
-import { InstagramEmbed } from 'react-social-media-embed';
-import Carousel from 'react-multi-carousel';
-import Button from '../atoms/Button';
-import { FaInstagram } from 'react-icons/fa';
+"use client";
+import React from "react";
+import { InstagramEmbed } from "react-social-media-embed";
+import Carousel from "react-multi-carousel";
+import Button from "../atoms/Button";
+import { FaInstagram } from "react-icons/fa";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 const InstagramSection = () => {
   const responsive = {
@@ -29,29 +32,45 @@ const InstagramSection = () => {
     },
   };
   const posts = [
-    'https://www.instagram.com/reel/CnKyAS7jY3t/',
-    'https://www.instagram.com/p/CEKIYPiFN_0/',
-    'https://www.instagram.com/reel/C-s0NYft6Yj/',
-    'https://www.instagram.com/p/C97Vv5CtTD6/',
+    "https://www.instagram.com/reel/CnKyAS7jY3t/",
+    "https://www.instagram.com/p/CEKIYPiFN_0/",
+    "https://www.instagram.com/reel/C-s0NYft6Yj/",
+    "https://www.instagram.com/p/C97Vv5CtTD6/",
   ];
+
+  useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.utils.toArray(".instagram .fadein--top").forEach((card: any) => {
+      gsap.fromTo(
+        card,
+        { opacity: 0, y: -20 },
+        {
+          opacity: 1,
+          y: 0,
+          stagger: 0.65,
+          scrollTrigger: {
+            trigger: card,
+            start: "top 90%",
+            end: "bottom 10%",
+            once: true,
+          },
+        }
+      );
+    });
+  }, []);
+
   return (
-    <section
-      className="about_me"
-      id="about_me"
-    >
+    <section className="instagram" id="instagram">
       <div className="container">
-        <h2 className="about_me_title fadein--top title">NOSSO INSTAGRAM</h2>
+        <h2 className="instagram_title fadein--top title">NOSSO INSTAGRAM</h2>
         <div className="instagram_wrapper">
           <Carousel responsive={responsive}>
             {posts.map((item, index) => (
               <div
                 key={index}
-                style={{ display: 'flex', justifyContent: 'center' }}
+                style={{ display: "flex", justifyContent: "center" }}
               >
-                <InstagramEmbed
-                  url={item}
-                  width={328}
-                />
+                <InstagramEmbed url={item} width={328} />
               </div>
             ))}
           </Carousel>

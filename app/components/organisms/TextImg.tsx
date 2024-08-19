@@ -30,8 +30,8 @@ const TextImg = () => {
   return (
     <section className="text-img" id="text-img">
       <div className="container">
-        <h2 className="text-img_title title fadein--top title lg:hidden">
-          LOREM IPSUM
+        <h2 className="text-img_title title uppercase fadein--top title lg:hidden">
+          Contabilidade Precisa
         </h2>
         <div className="text-img_wrapper flex flex-col lg:flex-row-reverse justify-center items-center gap-4">
           <div className="text-img_img">
@@ -46,17 +46,16 @@ const TextImg = () => {
           </div>
 
           <div className="text-img_text flex flex-col items-center lg:items-end max-w-[400px]">
-            <h2 className="text-img_title title hidden lg:inline-block mr-0 relative right-0 translate-x-0 text-right left-0">
-              LOREM IPSUM
+            <h2 className="text-img_title uppercase title hidden lg:inline-block mr-0 relative right-0 translate-x-0 text-right left-0">
+              Contabilidade Precisa
             </h2>
             <p className="fadein--top text-center lg:text-right text-sm font-medium">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo
-              iste doloribus, consequatur expedita minima id fugit ipsam dolorum
-              non quo magnam voluptatum culpa vitae sint eos? Nobis possimus
-              iure commodi. Lorem, ipsum dolor sit amet consectetur adipisicing
-              elit. Labore porro corrupti at. Autem eligendi atque corrupti
-              pariatur? Placeat vitae, nam, qui architecto eligendi perspiciatis
-              ipsa fugiat maiores quasi labore at.
+              Na GB Contabilidade, oferecemos serviços contábeis precisos e
+              personalizados para atender às necessidades do seu negócio. Com
+              foco em conformidade e crescimento, garantimos que suas finanças
+              estejam sempre em ordem. Conte conosco para simplificar sua
+              contabilidade, maximizar suas oportunidades e assegurar o sucesso
+              financeiro da sua empresa.
             </p>
             <Button
               text="Faça um orçamento"

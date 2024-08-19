@@ -14,22 +14,22 @@ const Services = () => {
   const list = [
     {
       title: "Imposto de renda",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      text: "Maximize suas deduções e evite problemas com o fisco.",
       icon: <MdAttachMoney className="text-4xl" />,
     },
     {
       title: "Abertura de empresa",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      text: "Orientação completa para começar seu negócio com segurança jurídica.",
       icon: <GiFactory className="text-4xl" />,
     },
     {
       title: "Criação de MEI",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      text: "Facilitamos sua formalização como Microempreendedor Individual.",
       icon: <IoDocumentAttachSharp className="text-4xl" />,
     },
     {
       title: "Contabilidade geral",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      text: "Gestão contábil eficiente para otimizar seus resultados financeiros.",
       icon: <FaHandshake className="text-4xl" />,
     },
   ];
