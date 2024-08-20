@@ -32,10 +32,11 @@ const InstagramSection = () => {
     },
   };
   const posts = [
-    "https://www.instagram.com/reel/CnKyAS7jY3t/",
-    "https://www.instagram.com/p/CEKIYPiFN_0/",
-    "https://www.instagram.com/reel/C-s0NYft6Yj/",
-    "https://www.instagram.com/p/C97Vv5CtTD6/",
+    "https://www.instagram.com/p/Cs4ckH_v32e/",
+    "https://www.instagram.com/p/Cs3h_VRLAer/",
+    "https://www.instagram.com/p/CpAsxszrVBa/",
+    "https://www.instagram.com/p/Cop4GJoPGNG/",
+    "https://www.instagram.com/p/CoPdTaHuVXh/",
   ];
 
   useGSAP(() => {
