@@ -1,8 +1,8 @@
-'use client';
-import Image from 'next/image';
-import React from 'react';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+"use client";
+import Image from "next/image";
+import React from "react";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 const Testimonials = () => {
   const responsive = {
@@ -30,44 +30,35 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      name: 'John Doe',
-      img: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541',
-      quote:
-        '"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque aliquid cupiditate."',
+      name: "Isabela Carvalho",
+      img: "/testimonials/Isabela_Carvalho.jpg",
+      quote: '"GB Contabilidade. A melhor!"',
     },
     {
-      name: 'John Doe',
-      img: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541',
-      quote:
-        '"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque aliquid cupiditate."',
+      name: "Leandro Brito Machado",
+      img: "/testimonials/Leandro_Brito_Machado.jpg",
+      quote: '"A melhor!"',
     },
     {
-      name: 'John Doe',
-      img: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541',
+      name: "Mada Anjos",
+      img: "/testimonials/Mada_Anjos.jpg",
       quote:
-        '"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque aliquid cupiditate."',
+        '"Presta serviço presta serviço a minha empresa há 8 anos com muita responsabilidade e dedicação."',
     },
     {
-      name: 'John Doe',
-      img: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541',
-      quote:
-        '"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque aliquid cupiditate."',
+      name: "Desiree Oliver",
+      img: "/testimonials/Desiree_Oliver.jpg",
+      quote: '"Sem dúvida GB Contabilidade!"',
     },
   ];
 
   return (
-    <section
-      id="testimonials"
-      className="testimonials"
-    >
+    <section id="testimonials" className="testimonials">
       <div className="container">
         <h2 className="testimonials-title title">DEPOIMENTOS</h2>
         <Carousel responsive={responsive}>
           {testimonials.map((item, index) => (
-            <div
-              key={index}
-              className="testimonial"
-            >
+            <div key={index} className="testimonial">
               <div className="pic flex flex-col items-center">
                 <Image
                   src={item.img}
@@ -78,10 +69,10 @@ const Testimonials = () => {
                   width={100}
                 />
 
-                <p className="testimonial-name text-center max-w-[130px]">
+                <p className="testimonial-name text-center text-xs max-w-[130px]">
                   {item.name}
                 </p>
-                <hr className="my-3 w-28" />
+                <hr className="my-3 w-28 opacity-50" />
                 <p className="testimonial-quote text-center text-sm max-w-[260px]">
                   {item.quote}
                 </p>
