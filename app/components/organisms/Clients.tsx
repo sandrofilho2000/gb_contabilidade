@@ -70,6 +70,10 @@ const Clients = () => {
       link: "#",
       img: "/clients/fisio+.png",
     },
+    {
+      link: "#",
+      img: "/clients/Logo-RBR-Solar.png",
+    },
   ];
 
   return (

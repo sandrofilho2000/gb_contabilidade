@@ -1,12 +1,12 @@
-'use client';
-import React from 'react';
-import { GiTrophyCup } from 'react-icons/gi';
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
+"use client";
+import React from "react";
+import { GiTrophyCup } from "react-icons/gi";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const Awards = () => {
   useGSAP(() => {
-    gsap.utils.toArray('.awards .fadein--top').forEach((item: any) => {
+    gsap.utils.toArray(".awards .fadein--top").forEach((item: any) => {
       gsap.fromTo(
         item,
         { opacity: 0, y: -10 },
@@ -16,8 +16,8 @@ const Awards = () => {
           duration: 0.5,
           scrollTrigger: {
             trigger: item,
-            start: 'top 80%',
-            end: 'bottom 10%',
+            start: "top 80%",
+            end: "bottom 10%",
             scrub: true,
           },
         }
@@ -32,8 +32,8 @@ const Awards = () => {
       <div className="container relative justify-center z-10 flex text-white">
         <GiTrophyCup className="text-6xl fadein--top" />
         <span className="text-center font-bold fadein--top uppercase text-white flex text-sm items-center">
-          Duas vezes seguidas eleito como o melhor escritório de contabilidade
-          do ano
+          Duas vezes seguidas premiado como um dos melhor escritório de
+          contabilidade de Maricá.
         </span>
         <GiTrophyCup className="text-6xl fadein--top" />
       </div>

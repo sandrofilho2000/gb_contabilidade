@@ -1,8 +1,8 @@
-'use client';
-import React, { useRef } from 'react';
-import Button from '../atoms/Button';
-import { MdOutlineEmail } from 'react-icons/md';
-import emailjs from '@emailjs/browser';
+"use client";
+import React, { useRef } from "react";
+import Button from "../atoms/Button";
+import { MdOutlineEmail } from "react-icons/md";
+import emailjs from "@emailjs/browser";
 
 const Form = () => {
   const form = useRef<HTMLFormElement | null>(null);
@@ -31,20 +31,21 @@ const Form = () => {
           from_phone: phoneInput.value,
           message: messageTextArea.value,
         };
+
         emailjs
           .send(
-            'service_6f6b2i4',
-            'template_cubfmbb',
+            "service_n2vhlxu",
+            "template_czn47ep",
             templateParams,
-            'kDnZAKKMVzjoMBy92'
+            "KYrZoGGxCMii-UsVo"
           )
           .then(
             (response) => {
-              alert('E-mail enviado!');
+              alert("E-mail enviado!");
             },
             (err) => {
               alert(
-                'Falha ao enviar o e-mail. Por favor, tente novamente mais tarde.'
+                "Falha ao enviar o e-mail. Por favor, tente novamente mais tarde."
               );
               console.log(err);
             }
@@ -55,10 +56,7 @@ const Form = () => {
   };
 
   return (
-    <form
-      ref={form}
-      onSubmit={sendMessage}
-    >
+    <form ref={form} onSubmit={sendMessage}>
       <div className="input_wrapper justify-between flex-col md:flex-row flex gap-4">
         <input
           type="text"
