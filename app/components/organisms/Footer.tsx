@@ -54,13 +54,18 @@ const Footer = () => {
           <hr className="mb-3 max-w-[200px] ml-2 opacity-50 lg:hidden" />
           <ul className="flex flex-col justify-center">
             <li className="flex">
-              <Link className="footer-link flex items-center gap-1" href="#">
+              <Link
+                target="_BLANK"
+                className="footer-link flex items-center gap-1"
+                href="https://api.whatsapp.com/send?phone=+5521%2099981-9549&text=Ol%C3%A1%2C+eu+gostaria+de+realizar+um+or%C3%A7amento."
+              >
                 <FaWhatsapp className="text-lg" />
                 +55 21 99981-9549
               </Link>
             </li>
             <li className="flex">
               <a
+                target="_blank"
                 className="footer-link flex items-center gap-1"
                 href="https://www.instagram.com/gbassessoriacontabil/"
               >
@@ -69,16 +74,14 @@ const Footer = () => {
               </a>
             </li>
             <li className="flex">
-              <Link className="footer-link flex items-center gap-1" href="#">
-                <FaFacebook className="text-lg" />
-                Facebook
-              </Link>
-            </li>
-            <li className="flex">
-              <Link className="footer-link flex items-center gap-1" href="#">
+              <a
+                target="_blank"
+                className="footer-link flex items-center gap-1"
+                href="mailto:giselecontabilidademarica@gmail.com"
+              >
                 <MdOutlineEmail className="text-lg" />
-                E-mail
-              </Link>
+                giselecontabilidademarica@gmail.com
+              </a>
             </li>
           </ul>
         </div>

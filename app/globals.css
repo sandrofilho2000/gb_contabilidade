@@ -306,3 +306,14 @@ footer {
     opacity: 0;
   }
 }
+
+#clients .react-multi-carousel-item {
+  width: auto !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#clients .react-multiple-carousel__arrow {
+  display: none;
+}

@@ -28,7 +28,7 @@ const Testimonials = () => {
     },
   };
 
-  const testimonials = [
+  const list = [
     {
       name: "Isabela Carvalho",
       img: "/testimonials/Isabela_Carvalho.jpg",
@@ -57,7 +57,7 @@ const Testimonials = () => {
       <div className="container">
         <h2 className="testimonials-title title">DEPOIMENTOS</h2>
         <Carousel responsive={responsive}>
-          {testimonials.map((item, index) => (
+          {list.map((item, index) => (
             <div key={index} className="testimonial">
               <div className="pic flex flex-col items-center">
                 <Image

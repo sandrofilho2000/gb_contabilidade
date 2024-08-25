@@ -78,9 +78,10 @@ const InstagramSection = () => {
 
           <Button
             text="VISITE NOSSO INSTAGRAM"
-            link="#"
+            link="https://www.instagram.com/gbassessoriacontabil/"
             classes="mx-auto block transition-all transition-delay-500"
             icon={<FaInstagram className="text-lg" />}
+            target_blank={true}
           />
         </div>
       </div>

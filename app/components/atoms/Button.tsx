@@ -1,15 +1,17 @@
-import React from 'react';
+import React from "react";
 
 const Button = ({
   text,
   link,
   classes,
   icon,
+  target_blank,
 }: {
   text: string;
   link?: string;
   classes?: string;
   icon?: JSX.Element;
+  target_blank?: boolean;
 }) => {
   return (
     <button
@@ -19,6 +21,7 @@ const Button = ({
         <a
           className="uppercase flex items-center gap-1 justify-center font-semibold text-white text-xs lg:text-sm"
           href={link}
+          target={`${target_blank ? "_BLANK" : "_SELF"} `}
         >
           {icon}
           {text}

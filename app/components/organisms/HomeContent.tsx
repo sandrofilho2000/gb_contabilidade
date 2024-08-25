@@ -12,6 +12,7 @@ import Clients from "./Clients";
 import Footer from "./Footer";
 import MadeBy from "./MadeBy";
 import MobileMenu from "../cells/MobileMenu";
+import WhatsAppFloat from "../atoms/WhatsAppFloat";
 
 const HomeContent = () => {
   return (
@@ -19,6 +20,7 @@ const HomeContent = () => {
       <Navbar />
       <MobileMenu />
       <Hero />
+      <WhatsAppFloat />
       <main id="main">
         <Services />
         <AboutMe />

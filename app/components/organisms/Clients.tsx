@@ -2,19 +2,27 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { Tilt } from "react-tilt";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 const Clients = () => {
-  const defaultOptions = {
-    reverse: false,
-    max: 15,
-    perspective: 1000,
-    scale: 1,
-    speed: 1000,
-    transition: true,
-    axis: null,
-    reset: true,
-    easing: "cubic-bezier(.03,.98,.52,.99)",
+  const responsive = {
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 3000 },
+      items: 12,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 10,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 720 },
+      items: 5,
+    },
+    mobile: {
+      breakpoint: { max: 720, min: 0 },
+      items: 4,
+    },
   };
 
   const list = [
@@ -77,27 +85,34 @@ const Clients = () => {
   ];
 
   return (
-    <section className="clients" id="clients">
+    <section id="clients" className="clients">
       <div className="container">
-        <h2 className="clients_title title">NOSSOS PARCEIROS</h2>
-        <div className="clients_wrapper flex flex-wrap justify-center items-center gap-3	">
+        <h2 className="clients-title title">NOSSOS PARCEIROS</h2>
+        <Carousel
+          showDots={false}
+          autoPlay={true}
+          arrows={false}
+          infinite={true}
+          autoPlaySpeed={2000}
+          responsive={responsive}
+        >
           {list.map((item, index) => (
-            <Tilt key={index} options={defaultOptions}>
-              <div className="client_wrapper">
-                <Link target="_blank" href={item.link}>
-                  <Image
-                    src={item.img}
-                    alt={item.img}
-                    className="h-28 object-cover w-auto"
-                    width={200}
-                    height={200}
-                    title={item.img}
-                  />
-                </Link>
-              </div>
-            </Tilt>
+            <div
+              key={index}
+              className="pic flex client w-60 items-center justify-center"
+            >
+              <Image
+                src={item.img}
+                alt="depoimento"
+                draggable={false}
+                title="depoimento"
+                className="object-cover w-auto max-w-52 max-h-36 select-none h-auto"
+                width={200}
+                height={200}
+              />
+            </div>
           ))}
-        </div>
+        </Carousel>
       </div>
     </section>
   );
