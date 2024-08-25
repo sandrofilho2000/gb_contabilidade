@@ -59,10 +59,12 @@ export default function RootLayout({
   return (
     <SystemContextProvider>
       <html lang="en">
-        <meta
-          name="google-site-verification"
-          content="uBkLF9Dpmm2wUGXt3YJz7DgGuQsrd32eLgYcJDDSyKw"
-        />
+        <head>
+          <meta
+            name="google-site-verification"
+            content="googlea3e9b42fea0f3b00.html"
+          />
+        </head>
         <body className={`${inter.className} dark`}>{children}</body>
       </html>
     </SystemContextProvider>
