@@ -34,8 +34,8 @@ const AboutMe = () => {
         <div className="about-me_wrapper  flex flex-col lg:flex-row justify-center items-center gap-4">
           <div className="about-me_img">
             <Image
-              height={400}
-              width={400}
+              height={350}
+              width={350}
               src="/gisele.jpg"
               className="rounded-sm fadein--top w-[70%] lg:w-full max-w-[300px] lg:max-w-[350px] block mx-auto shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
               title="Contadora Gisele"
