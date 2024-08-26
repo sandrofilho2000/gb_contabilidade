@@ -56,7 +56,7 @@ const AboutMe = () => {
               me apaixonei pela profissão. Sou formada em Direito e Técnica em
               Contabilidade desde 2014. Iniciei minha carreira e, em 2020,
               conquistei meus primeiros clientes. Desde então, venho construindo
-              minha própria jornada e sempre buscando me aprimorar.
+              minha própria trajetória e sempre buscando me aprimorar.
             </p>
             <Button
               text="Faça um orçamento"
