@@ -38,8 +38,8 @@ const Hero = () => {
         width={375}
         height={562}
         className="relative top-0 left-0 w-full h-screen opacity-0"
-        title="Imagem de fundo de sseão hero onde há um contador"
-        alt="Imagem de fundo de sseão hero onde há um contador"
+        title="Imagem de fundo de seção hero onde há um contador"
+        alt="Imagem de fundo de seção hero onde há um contador"
         src="https://images.pexels.com/photos/4476378/pexels-photo-4476378.jpeg?auto=compress&cs=tinysrgb&w=600"
       />
 
