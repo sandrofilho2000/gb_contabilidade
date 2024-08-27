@@ -48,15 +48,16 @@ const AboutMe = () => {
               SOBRE
             </h2>
             <p className="fadein--top text-center lg:text-left text-sm font-medium">
-              Me chamo Gisele, filha de José Alberto e Gilcilea, mãe de Rafaele
-              e Lucas. Meu interesse pela contabilidade começou com meu avô,
-              Gessy, que tinha um escritório em Itaboraí nos anos 70. Nos anos
-              80, meu pai seguiu o mesmo caminho, abrindo seu escritório em
-              Alcântara. Desde pequena, eu o acompanhava em visitas a clientes e
-              me apaixonei pela profissão. Sou formada em Direito e Técnica em
-              Contabilidade desde 2014. Iniciei minha carreira e, em 2020,
-              conquistei meus primeiros clientes. Desde então, venho construindo
-              minha própria trajetória e sempre buscando me aprimorar.
+              Me chamo Gisele, filha de José Alberto e Gilcilea, casada com
+              Leandro e mãe de Rafaele e Lucas. Meu interesse pela contabilidade
+              começou com meu avô, Gessy, que tinha um escritório em Itaboraí
+              nos anos 70. Nos anos 80, meu pai seguiu o mesmo caminho, abrindo
+              seu escritório em Alcântara. Desde pequena, eu o acompanhava em
+              visitas a clientes e me apaixonei pela profissão. Sou formada em
+              Direito e Técnica em Contabilidade desde 2014. Iniciei minha
+              carreira e, em 2020, conquistei meus primeiros clientes. Desde
+              então, venho construindo minha própria trajetória e sempre
+              buscando me aprimorar.
             </p>
             <Button
               text="Faça um orçamento"
