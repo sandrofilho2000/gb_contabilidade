@@ -82,6 +82,14 @@ const Clients = () => {
       link: "#",
       img: "/clients/Logo-RBR-Solar.png",
     },
+    {
+      link: "#",
+      img: "/clients/tech&mais_produtos.jpg",
+    },
+    {
+      link: "#",
+      img: "/clients/soluções_catering_buffet.jpg",
+    },
   ];
 
   return (
