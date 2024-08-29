@@ -32,7 +32,7 @@ const Awards = () => {
       <div className="container relative justify-center z-10 flex text-white">
         <GiTrophyCup className="text-6xl fadein--top" />
         <span className="text-center font-bold fadein--top uppercase text-white flex text-sm items-center">
-          Duas vezes seguidas premiado como um dos melhor escritório de
+          Duas vezes seguidas premiado como um dos melhores escritório de
           contabilidade de Maricá.
         </span>
         <GiTrophyCup className="text-6xl fadein--top" />
